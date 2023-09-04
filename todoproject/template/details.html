@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+ <div class="col-md-6">
+                        <h4>Task </h4>
+
+                        <div class="card shadow" style="width: 18rem;">
+                                <div class="card-body">
+                                        <h5 class="card-title">Task Name :
+                                                {{task1.name}}
+                                        </h5>
+                                        <p class="card-text">Priority : {{task1.priority}}
+                                        </p>
+                                        <p class="card-text">Date : {{task1.date}}
+                                        </p>
+
+                                        <a href="delete/{{task1.id}}/" class="btn btn-danger">Delete</a>
+                                        <a href="cbvupdate/{{task1.id}}/" class="btn btn-success">Update</a>
+
+                                </div>
+                        </div><br>
+{% endblock %}
